@@ -25,7 +25,6 @@ const PlayStoreBox = styled.div`
 const AppStoreBox = styled.div`
   display: inline-block;
   height: 54px;
-  margin-right: 0px;
   padding: 5px 0px 5px 62px;
   line-height: 22px;
   background-image: url(${APP_STORE});

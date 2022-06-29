@@ -3,8 +3,10 @@ import styled from 'styled-components'
 import { TRIPLE_LOGO } from '../constants/imageConstants'
 
 const ContentLogoBox = styled.div`
+  position: absolute;
+  top: 150px;
   width: 400px;
-  height: 338px;
+  height: 100px;
   padding-top: 280px;
   background-image: url(${TRIPLE_LOGO});
   background-size: 400px 338px;
