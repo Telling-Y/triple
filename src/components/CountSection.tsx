@@ -8,16 +8,12 @@ const CountSectionContainer = styled.section`
   width: 1200px;
   margin: 0 auto;
 `
-const CountSectionWrap = styled.section``
-const CountSection: React.FC = () => {
+export const CountSection: React.FC = () => {
   return (
     <CountSectionContainer>
-      <CountSectionWrap>
-        <ContentLogo />
-        <Metrics />
-        <Awards />
-      </CountSectionWrap>
+      <ContentLogo />
+      <Metrics />
+      <Awards />
     </CountSectionContainer>
   )
 }
-export default CountSection
