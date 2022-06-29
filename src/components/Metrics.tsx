@@ -26,7 +26,7 @@ export const Metrics: React.FC = () => {
         <strong>
           <span>100</span>만 개
         </strong>
-        의 여행리뷰
+        의 여행 리뷰
       </MetricItemWrap>
       <MetricItemWrap>
         <strong>
