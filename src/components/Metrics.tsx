@@ -1,7 +1,18 @@
 import styled from 'styled-components'
 
-const MetricsContainer = styled.div``
-const MetricItemWrap = styled.div``
+const MetricsContainer = styled.div`
+  margin-left: 623px;
+  padding-top: 150px;
+`
+const MetricItemWrap = styled.div`
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  strong {
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+  }
+`
 export const Metrics: React.FC = () => {
   return (
     <MetricsContainer>
