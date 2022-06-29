@@ -1,10 +1,37 @@
 import styled from 'styled-components'
 
-const AwardContainer = styled.div``
+import { PLAY_STORE, APP_STORE } from '../constants/imageConstants'
 
-const PlayStoreBox = styled.div``
+const AwardContainer = styled.div`
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 50px 0px 140px 623px;
+  color: rgba(58, 58, 58, 0.8);
+`
 
-const AppStoreBox = styled.div``
+const PlayStoreBox = styled.div`
+  display: inline-block;
+  height: 54px;
+  padding: 5px 0px 5px 62px;
+  margin-right: 39px;
+  background-image: url(${PLAY_STORE});
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 54px 54px;
+  line-height: 22px;
+`
+
+const AppStoreBox = styled.div`
+  display: inline-block;
+  height: 54px;
+  margin-right: 0px;
+  padding: 5px 0px 5px 62px;
+  line-height: 22px;
+  background-image: url(${APP_STORE});
+  background-size: 54px 54px;
+  background-repeat: no-repeat;
+`
 
 export const Awards: React.FC = () => {
   return (
