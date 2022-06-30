@@ -1,21 +1,28 @@
 import styled from 'styled-components'
 
-const MetricsContainer = styled.div`
+import { useAnimateBox } from 'hooks/useAnimateBox'
+import { AnimateProp } from 'interface/AnimateBox.type'
+
+const MetricsContainer = styled.div<AnimateProp>`
   margin-left: 623px;
   padding-top: 150px;
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transform: translateY(${(props) => (props.isTranslateY ? '0px' : '5px')});
+  transition: all 700ms ease-in-out 200ms;
 `
 const MetricItemWrap = styled.div`
+  margin-bottom: 20px;
   font-size: 36px;
   letter-spacing: -1px;
-  margin-bottom: 20px;
+  color: rgb(58, 58, 58);
   strong {
     font-weight: bold;
-    color: rgb(58, 58, 58);
   }
 `
 export const Metrics: React.FC = () => {
+  const { opacity, moveBool } = useAnimateBox()
   return (
-    <MetricsContainer>
+    <MetricsContainer isVisible={opacity} isTranslateY={moveBool}>
       <MetricItemWrap>
         <strong>
           <span>700</span>만 명

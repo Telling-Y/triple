@@ -2,7 +2,10 @@ import styled from 'styled-components'
 
 import { TRIPLE_LOGO } from '../constants/imageConstants'
 
-const ContentLogoBox = styled.div`
+import { AnimateProp } from 'interface/AnimateBox.type'
+import { useAnimateBox } from 'hooks/useAnimateBox'
+
+const ContentLogoBox = styled.div<AnimateProp>`
   position: absolute;
   top: 150px;
   width: 400px;
@@ -15,8 +18,16 @@ const ContentLogoBox = styled.div`
   font-family: sans-serif;
   font-size: 15px;
   color: rgba(58, 58, 58, 0.7);
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transform: translateY(${(props) => (props.isTranslateY ? '0px' : '5px')});
+  transition: all 700ms ease-in-out 100ms;
 `
 
 export const ContentLogo: React.FC = () => {
-  return <ContentLogoBox>2021년 12월 기준</ContentLogoBox>
+  const { opacity, moveBool } = useAnimateBox()
+  return (
+    <ContentLogoBox isVisible={opacity} isTranslateY={moveBool}>
+      2021년 12월 기준
+    </ContentLogoBox>
+  )
 }

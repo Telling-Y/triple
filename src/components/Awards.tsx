@@ -1,20 +1,26 @@
 import styled from 'styled-components'
 
 import { PLAY_STORE, APP_STORE } from '../constants/imageConstants'
+import { AnimateProp } from '../interface/AnimateBox.type'
 
-const AwardContainer = styled.div`
+import { useAnimateBox } from 'hooks/useAnimateBox'
+
+const AwardContainer = styled.div<AnimateProp>`
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin: 50px 0px 140px 623px;
   color: rgba(58, 58, 58, 0.8);
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transform: translateY(${(props) => (props.isTranslateY ? '0px' : '5px')});
+  transition: all 700ms ease-in-out 300ms;
 `
 
 const PlayStoreBox = styled.div`
   display: inline-block;
   height: 54px;
-  padding: 5px 0px 5px 62px;
   margin-right: 39px;
+  padding: 5px 0px 5px 62px;
   background-image: url(${PLAY_STORE});
   background-position: left top;
   background-repeat: no-repeat;
@@ -26,15 +32,16 @@ const AppStoreBox = styled.div`
   display: inline-block;
   height: 54px;
   padding: 5px 0px 5px 62px;
-  line-height: 22px;
   background-image: url(${APP_STORE});
   background-size: 54px 54px;
   background-repeat: no-repeat;
+  line-height: 22px;
 `
 
 export const Awards: React.FC = () => {
+  const { opacity, moveBool } = useAnimateBox()
   return (
-    <AwardContainer>
+    <AwardContainer isVisible={opacity} isTranslateY={moveBool}>
       <PlayStoreBox>
         2018 구글 플레이스토어
         <br />
