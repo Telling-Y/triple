@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { useAnimateBox } from 'hooks/useAnimateBox'
 import { AnimateProp } from 'interface/AnimateBox.type'
+import { useCounter } from 'hooks/useCounter'
 
 const MetricsContainer = styled.div<AnimateProp>`
   margin-left: 623px;
@@ -25,19 +26,19 @@ export const Metrics: React.FC = () => {
     <MetricsContainer isVisible={opacity} isTranslateY={moveBool}>
       <MetricItemWrap>
         <strong>
-          <span>700</span>만 명
+          <span>{useCounter(700)}</span>만 명
         </strong>
         의 여행자
       </MetricItemWrap>
       <MetricItemWrap>
         <strong>
-          <span>100</span>만 개
+          <span>{useCounter(100)}</span>만 개
         </strong>
         의 여행 리뷰
       </MetricItemWrap>
       <MetricItemWrap>
         <strong>
-          <span>470</span>만 개
+          <span>{useCounter(470)}</span>만 개
         </strong>
         의 여행 일정
       </MetricItemWrap>
