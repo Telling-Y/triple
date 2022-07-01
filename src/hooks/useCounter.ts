@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import { easeOutExpo } from 'util/easeOutExpo'
+
 export const useCounter = (maximum: number): number => {
   const [returnCount, setReturnCount] = useState(0)
   const duration = 2000
@@ -8,7 +10,7 @@ export const useCounter = (maximum: number): number => {
   useEffect(() => {
     let count = 0
     const counter = setInterval(() => {
-      const progress = count++ / proportion
+      const progress = easeOutExpo(count++ / proportion)
       setReturnCount(Math.floor(maximum * progress))
       if (count > proportion) {
         clearInterval(counter)
