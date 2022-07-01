@@ -18,7 +18,7 @@ export const useCounter = (maximum: number): number => {
       return () => {
         clearInterval(counter)
       }
-    }, frame)
+    }, viewSpeed)
   }, [maximum, viewSpeed, frame])
   return returnCount
 }
