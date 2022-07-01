@@ -1,7 +1,8 @@
-import CountSection from './components/CountSection'
 import GlobalStyle from './style/GlobalStyle'
 
-function App() {
+import { CountSection } from 'components/CountSection'
+
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
