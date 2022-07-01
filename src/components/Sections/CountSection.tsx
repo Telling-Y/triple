@@ -5,6 +5,7 @@ import { ContentLogo } from 'components/ContentLogo'
 import { Metrics } from 'components/Metrics'
 
 const CountSectionContainer = styled.section`
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 `
