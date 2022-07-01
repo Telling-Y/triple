@@ -28,5 +28,5 @@
  이후 전달받은 지표의 최대값(maximum)에 frame을 곱해 상태값(returnCount)을 반환합니다. 
 ## Reference
 
-- 배포 링크: <a href="https://62be75997cb06a07f2013b83--remarkable-moonbeam-d3aa6f.netlify.app/" target="_blank">사전과제 배포 링크</a>
-- 참조: <a herf="https://easings.net/ko">easeOutExpo</a>
+참조: <a href="https://easings.net/ko" target="_blank">easeOutExpo</a>
+
