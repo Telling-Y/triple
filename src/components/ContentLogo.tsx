@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-import { TRIPLE_LOGO } from '../constants/imageConstants'
-
-import { AnimateProp } from 'interface/AnimateBox.type'
+import { TRIPLE_LOGO } from 'constants/imageConstants'
 import { useAnimateBox } from 'hooks/useAnimateBox'
+import { AnimateProp } from 'interface/AnimateBox.type'
 
 const ContentLogoBox = styled.div<AnimateProp>`
   position: absolute;

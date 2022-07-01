@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 import { useAnimateBox } from 'hooks/useAnimateBox'
-import { AnimateProp } from 'interface/AnimateBox.type'
 import { useCounter } from 'hooks/useCounter'
+import { AnimateProp } from 'interface/AnimateBox.type'
 
 const MetricsContainer = styled.div<AnimateProp>`
   margin-left: 623px;

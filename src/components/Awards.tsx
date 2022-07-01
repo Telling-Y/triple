@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-import { PLAY_STORE, APP_STORE } from '../constants/imageConstants'
-import { AnimateProp } from '../interface/AnimateBox.type'
-
+import { APP_STORE, PLAY_STORE } from 'constants/imageConstants'
 import { useAnimateBox } from 'hooks/useAnimateBox'
+import { AnimateProp } from 'interface/AnimateBox.type'
 
 const AwardContainer = styled.div<AnimateProp>`
   font-family: sans-serif;
