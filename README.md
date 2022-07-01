@@ -8,7 +8,9 @@
 
 - 배포 링크: <a href="https://62be75997cb06a07f2013b83--remarkable-moonbeam-d3aa6f.netlify.app/" target="_blank">사전과제 배포 링크</a>
 
-
+## 프로젝트 실행
+- npm install 이후 npm start로 실행하실 수 있습니다.
+- 혹은 상단 첨부된 배포 링크를 통해 구현된 화면을 확인하실 수 있습니다.
 ## 사용 기술 및 구현 기능
 
 ### 사용 기술
