@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { easeOutExpo } from 'util/easeOutExpo'
+import { easeOutExpo } from 'utils/easeOutExpo'
 
 export const useCounter = (maximum: number): number => {
   const [returnCount, setReturnCount] = useState(0)

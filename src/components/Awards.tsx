@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import { APP_STORE, PLAY_STORE } from 'constants/imageConstants'
 import { useAnimateBox } from 'hooks/useAnimateBox'
-import { AnimateProp } from 'interface/AnimateBox.type'
+import { APP_STORE, PLAY_STORE } from 'utils/constants/imageConstants'
+import { AnimateProp } from 'utils/interface/AnimateBox.type'
 
 const AwardContainer = styled.div<AnimateProp>`
   margin: 50px 0px 140px 623px;
