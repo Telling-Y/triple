@@ -15,6 +15,9 @@ export const useCounter = (maximum: number): number => {
       if (count > proportion) {
         clearInterval(counter)
       }
+      return () => {
+        clearInterval(counter)
+      }
     }, frame)
   }, [frame, maximum, proportion])
   return returnCount
