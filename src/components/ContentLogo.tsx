@@ -10,13 +10,13 @@ const ContentLogoBox = styled.div<AnimateProp>`
   width: 400px;
   height: 100px;
   padding-top: 280px;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: rgba(58, 58, 58, 0.7);
   background-image: url(${TRIPLE_LOGO});
   background-size: 400px 338px;
   background-repeat: no-repeat;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 15px;
-  color: rgba(58, 58, 58, 0.7);
   opacity: ${(props) => (props.isVisible ? '1' : '0')};
   transform: translateY(${(props) => (props.isTranslateY ? '0px' : '5px')});
   transition: all 700ms ease-in-out 100ms;
