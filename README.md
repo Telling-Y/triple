@@ -4,7 +4,8 @@
 ### 데모 및 배포
 
 
-<img src="assets/readmeSrc/triple-demo">
+![데모](https://user-images.githubusercontent.com/82327230/176841933-f4a71049-18e5-4531-8202-b1b549bbb4e6.gif)
+
 - 배포 링크: <a href="https://62be75997cb06a07f2013b83--remarkable-moonbeam-d3aa6f.netlify.app/" target="_blank">사전과제 배포 링크</a>
 
 
